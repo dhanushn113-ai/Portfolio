@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>Dhanush N | Java Full Stack Developer & AI/ML Enthusiast</title>
+    <meta name="description" content="Portfolio of Dhanush N, a Computer Science Engineering student and Java Full Stack Developer. Experienced in Spring Boot, MySQL, REST APIs, and Machine Learning.">
+    <meta name="keywords" content="Dhanush N, Java Full Stack Developer, Spring Boot, AI, Machine Learning, REST APIs, MySQL, Software Engineer, Portfolio">
+    <meta name="author" content="Dhanush N">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/dhanushn113-ai">
+    <meta property="og:title" content="Dhanush N | Java Full Stack Developer & AI/ML Enthusiast">
+    <meta property="og:description" content="Building scalable web applications and intelligent AI solutions. Check out my projects and experience.">
+    <meta property="og:image" content="assets/images/dhanush_headshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Dhanush N | Java Full Stack Developer & AI/ML Enthusiast">
+    <meta property="twitter:description" content="Building scalable web applications and intelligent AI solutions. Check out my projects and experience.">
+    <meta property="twitter:image" content="assets/images/dhanush_headshot.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/dhanush_headshot.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Professional Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <span class="loader-text">DN.DEVELOPER</span>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo" id="logo-nav">DN<span>.</span></a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" class="btn btn-nav" download="Dhanush_N_Resume.pdf">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="particle-canvas" class="particle-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-recruiter">
+                    <span class="ping-dot"></span> Open for Internships & Full-Time Roles
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Dhanush N</span>
+                </h1>
+                <h2 class="hero-role-wrapper">
+                    I am a <span class="role-text" id="role-text"></span><span class="typed-cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    I build scalable backend systems, responsive web applications, and intelligent AI-powered solutions that solve real-world problems.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary" download="Dhanush_N_Resume.pdf">
+                        <i class="fa-solid fa-file-pdf"></i> Resume
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhanush-n-41a6342aa" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:dhanushn113@gmail.com" aria-label="Email Dhanush">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918374430062" aria-label="Call Dhanush">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="profile-img-glow"></div>
+                <div class="profile-frame">
+                    <img src="assets/images/dhanush_headshot.png" alt="Dhanush N Professional Headshot" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Statistics Section -->
+    <section class="stats-section">
+        <div class="container stats-container">
+            <div class="stat-card glass-card reveal">
+                <div class="stat-icon-wrapper">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number" data-target="8.18" data-decimal="true">0.0</h3>
+                    <p class="stat-label">Engineering CGPA</p>
+                </div>
+            </div>
+            
+            <div class="stat-card glass-card reveal">
+                <div class="stat-icon-wrapper">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number" data-target="10">0</h3>
+                    <p class="stat-label">Projects Built</p>
+                </div>
+            </div>
+            
+            <div class="stat-card glass-card reveal">
+                <div class="stat-icon-wrapper">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number" data-target="3">0</h3>
+                    <p class="stat-label">Certifications</p>
+                </div>
+            </div>
+            
+            <div class="stat-card glass-card reveal">
+                <div class="stat-icon-wrapper">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="stat-text">
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p class="stat-label">Internship Hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <h2 class="section-title text-center reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content glass-card reveal">
+                    <p class="about-text">
+                        I am a Computer Science Engineering student with a CGPA of 8.18 and hands-on experience in Java Full Stack Development, Spring Boot, REST APIs, MySQL, and Frontend Technologies. I enjoy transforming ideas into scalable software solutions and have worked on both AI-powered applications and web development projects. My focus is on writing clean code, solving problems efficiently, and continuously improving my development skills.
+                    </p>
+                    <div class="personal-details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Name</span>
+                            <span class="detail-val">Dhanush N</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Role</span>
+                            <span class="detail-val">Java Full Stack Developer</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Education</span>
+                            <span class="detail-val">B.E. Computer Science</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-val">Andhra Pradesh, India</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-highlights-wrapper reveal">
+                    <div class="highlight-card glass-card">
+                        <i class="fa-solid fa-rocket highlight-icon"></i>
+                        <h4>Product Mindset</h4>
+                        <p>Bridging backend reliability with user-centric frontend experiences.</p>
+                    </div>
+                    <div class="highlight-card glass-card">
+                        <i class="fa-solid fa-brain highlight-icon"></i>
+                        <h4>AI/ML Enthusiast</h4>
+                        <p>Integrating intelligence into applications with Machine Learning and CNNs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills-section section">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Technical Skills</h2>
+            
+            <div class="skills-category-tabs reveal">
+                <button class="skill-tab active" data-tab="backend">Backend & DB</button>
+                <button class="skill-tab" data-tab="frontend">Frontend & Lang</button>
+                <button class="skill-tab" data-tab="aiml">AI & ML</button>
+                <button class="skill-tab" data-tab="core-tools">Core Concepts & Tools</button>
+            </div>
+
+            <div class="skills-content-wrapper reveal">
+                <!-- Backend & DB Tab -->
+                <div class="skills-tab-content active" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-brands fa-java skill-icon" style="color: #f89820;"></i>
+                                    <span>Java</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-leaf skill-icon" style="color: #6db33f;"></i>
+                                    <span>Spring Boot</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-gears skill-icon" style="color: #38bdf8;"></i>
+                                    <span>REST APIs</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-database skill-icon" style="color: #00758f;"></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend & Lang Tab -->
+                <div class="skills-tab-content" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-html5 fa-brands skill-icon" style="color: #e34c26;"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-css3-alt fa-brands skill-icon" style="color: #264de4;"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-js-square fa-brands skill-icon" style="color: #f7df1e;"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-brands fa-python skill-icon" style="color: #3776ab;"></i>
+                                    <span>Python</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML Tab -->
+                <div class="skills-tab-content" id="aiml">
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-robot skill-icon" style="color: #8b5cf6;"></i>
+                                    <span>Artificial Intelligence</span>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-brain skill-icon" style="color: #3b82f6;"></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-network-wired skill-icon" style="color: #ec4899;"></i>
+                                    <span>CNN (Neural Networks)</span>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Concepts & Tools Tab -->
+                <div class="skills-tab-content" id="core-tools">
+                    <div class="skills-grid">
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-cube skill-icon" style="color: #3b82f6;"></i>
+                                    <span>OOPs & Data Structures</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-lightbulb skill-icon" style="color: #facc15;"></i>
+                                    <span>Problem Solving</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-brands fa-git-alt skill-icon" style="color: #f1502f;"></i>
+                                    <span>Git & GitHub</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-info">
+                                <div class="skill-title-wrapper">
+                                    <i class="fa-solid fa-code skill-icon" style="color: #007acc;"></i>
+                                    <span>VS Code & IDEs</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress" style="--percent: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="timeline-section section">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Experience & Education</h2>
+            
+            <div class="timeline">
+                <!-- Timeline item 1: Internship -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2025 - Present</div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-badge badge-work">Internship</span>
+                        <h3 class="timeline-title">Java Full Stack Intern</h3>
+                        <h4 class="timeline-subtitle">TGR</h4>
+                        <ul class="timeline-list">
+                            <li>Developed backend services using Java and Spring Boot.</li>
+                            <li>Worked with REST APIs to support application frontend requirements.</li>
+                            <li>Integrated frontend and backend applications into unified web modules.</li>
+                            <li>Participated in debugging, code optimization, and deployment activities.</li>
+                        </ul>
+                        <div class="timeline-tech-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>REST APIs</span>
+                            <span>MySQL</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 2: Internship -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2025 - May 2025</div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-badge badge-work">Internship</span>
+                        <h3 class="timeline-title">Web Developer Intern</h3>
+                        <h4 class="timeline-subtitle">Assistive Technology</h4>
+                        <ul class="timeline-list">
+                            <li>Built responsive websites using HTML, CSS, and JavaScript.</li>
+                            <li>Improved UI/UX experience and interactive components.</li>
+                            <li>Collaborated with teams to enhance platform functionality.</li>
+                        </ul>
+                        <div class="timeline-tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline item 3: Education -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 – 2026</div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-badge badge-edu">Education</span>
+                        <h3 class="timeline-title">Bachelor of Engineering in Computer Science</h3>
+                        <h4 class="timeline-subtitle">Siddharth Institute of Engineering & Technology</h4>
+                        <p class="timeline-desc">
+                            Focused on foundations of software development, OOPs, data structures, algorithm design, database management, and artificial intelligence.
+                        </p>
+                        <div class="timeline-score-badge">
+                            <strong>CGPA:</strong> 8.18 / 10.0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section section">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <span class="project-type"><i class="fa-solid fa-brain"></i> AI / Healthcare</span>
+                        <div class="project-links">
+                            <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI-Powered Prediction of Migraine Attacks</h3>
+                    <p class="project-description">
+                        Developed a machine learning solution that predicts migraine attacks using lifestyle patterns and weather conditions. Implemented data preprocessing, feature engineering, and predictive modeling to generate preventive healthcare insights.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <span class="project-type"><i class="fa-solid fa-seedling"></i> AI / Agriculture</span>
+                        <div class="project-links">
+                            <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AgroServe – AI Agriculture Platform</h3>
+                    <p class="project-description">
+                        Built an intelligent agriculture platform that provides crop recommendations, yield prediction, fertilizer suggestions, and plant disease detection using Machine Learning and CNN models integrated through Flask.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Machine Learning</span>
+                        <span>CNN</span>
+                        <span>Random Forest</span>
+                        <span>Decision Tree</span>
+                        <span>Linear Regression</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <span class="project-type"><i class="fa-solid fa-users-gear"></i> Full Stack</span>
+                        <div class="project-links">
+                            <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Employee Management System</h3>
+                    <p class="project-description">
+                        A full-stack application built with Java, Spring Boot, MySQL, and REST APIs for managing employee records, departments, and payroll operations.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-header">
+                        <span class="project-type"><i class="fa-solid fa-list-check"></i> Web App</span>
+                        <div class="project-links">
+                            <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Task Management System</h3>
+                    <p class="project-description">
+                        A modern task management platform allowing users to create, assign, track, and manage tasks with authentication and dashboard analytics.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Repositories Section -->
+    <section class="github-section section">
+        <div class="container">
+            <div class="section-title-wrapper text-center reveal">
+                <h2 class="section-title">Latest GitHub Activity</h2>
+                <p class="section-subtitle">Real-time public repositories from <a href="https://github.com/dhanushn113-ai" target="_blank" class="github-user-link">@dhanushn113-ai</a></p>
+            </div>
+            
+            <div class="github-repos-grid" id="github-repos-grid">
+                <!-- Skeleton Loader Cards (rendered by default, replaced by JS) -->
+                <div class="github-card-skeleton glass-card">
+                    <div class="skeleton-line title"></div>
+                    <div class="skeleton-line desc"></div>
+                    <div class="skeleton-line desc-short"></div>
+                    <div class="skeleton-footer">
+                        <div class="skeleton-dot"></div>
+                        <div class="skeleton-line tag"></div>
+                    </div>
+                </div>
+                <div class="github-card-skeleton glass-card">
+                    <div class="skeleton-line title"></div>
+                    <div class="skeleton-line desc"></div>
+                    <div class="skeleton-line desc-short"></div>
+                    <div class="skeleton-footer">
+                        <div class="skeleton-dot"></div>
+                        <div class="skeleton-line tag"></div>
+                    </div>
+                </div>
+                <div class="github-card-skeleton glass-card">
+                    <div class="skeleton-line title"></div>
+                    <div class="skeleton-line desc"></div>
+                    <div class="skeleton-line desc-short"></div>
+                    <div class="skeleton-footer">
+                        <div class="skeleton-dot"></div>
+                        <div class="skeleton-line tag"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center github-view-all reveal">
+                <a href="https://github.com/dhanushn113-ai" target="_blank" class="btn btn-outline">
+                    <i class="fa-brands fa-github"></i> View All Repositories on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section class="certifications-section section">
+        <div class="container cert-achieve-grid">
+            <!-- Certifications -->
+            <div class="certifications-wrapper reveal">
+                <h3 class="subsection-title"><i class="fa-solid fa-graduation-cap text-gradient"></i> Certifications</h3>
+                <div class="certifications-list">
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h4>NPTEL Programming in Java</h4>
+                            <p>National Programme on Technology Enhanced Learning</p>
+                        </div>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Web Development Certification</h4>
+                            <p>Full-Stack Frontend & Responsive Design</p>
+                        </div>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Java Full Stack Certification</h4>
+                            <p>Enterprise Java Web Services and Spring Architectures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-wrapper reveal">
+                <h3 class="subsection-title"><i class="fa-solid fa-trophy text-gradient"></i> Achievements</h3>
+                <div class="achievements-list">
+                    <div class="achievement-item glass-card">
+                        <i class="fa-solid fa-circle-check achievement-icon"></i>
+                        <p>Strong foundation in Java Full Stack Development</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <i class="fa-solid fa-circle-check achievement-icon"></i>
+                        <p>Experience with AI/ML Projects</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <i class="fa-solid fa-circle-check achievement-icon"></i>
+                        <p>Hands-on knowledge of REST API Development</p>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <i class="fa-solid fa-circle-check achievement-icon"></i>
+                        <p>Active Problem Solver and Continuous Learner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills & Personal Interests Section -->
+    <section class="skills-extras-section section">
+        <div class="container extras-grid">
+            <!-- Soft Skills -->
+            <div class="reveal">
+                <h3 class="subsection-title"><i class="fa-solid fa-users text-gradient"></i> Soft Skills</h3>
+                <div class="badges-container">
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-comments"></i> Communication</span>
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-people-group"></i> Teamwork</span>
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-crown"></i> Leadership</span>
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-brain"></i> Problem Solving</span>
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-bolt"></i> Quick Learning</span>
+                </div>
+            </div>
+
+            <!-- Personal Interests -->
+            <div class="reveal">
+                <h3 class="subsection-title"><i class="fa-solid fa-heart text-gradient"></i> Personal Interests</h3>
+                <div class="badges-container">
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</span>
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
+                    <span class="badge-tag glass-card"><i class="fa-solid fa-music"></i> Music</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Get in Touch</h2>
+            <h3 class="contact-subtitle text-center reveal">Let's Build Something Amazing Together</h3>
+            
+            <div class="contact-grid">
+                <!-- Contact info channels -->
+                <div class="contact-info-channels reveal">
+                    <div class="contact-channel-card glass-card">
+                        <div class="channel-icon-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="channel-details">
+                            <h4>Email Me</h4>
+                            <a href="mailto:dhanushn113@gmail.com">dhanushn113@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-channel-card glass-card">
+                        <div class="channel-icon-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="channel-details">
+                            <h4>Call Me</h4>
+                            <a href="tel:+918374430062">+91 83744 30062</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-channel-card glass-card">
+                        <div class="channel-icon-wrapper">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="channel-details">
+                            <h4>LinkedIn Connection</h4>
+                            <a href="https://www.linkedin.com/in/dhanush-n-41a6342aa" target="_blank" rel="noopener">linkedin.com/in/dhanush-n-41a6342aa</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-channel-card glass-card">
+                        <div class="channel-icon-wrapper">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="channel-details">
+                            <h4>GitHub Profile</h4>
+                            <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener">github.com/dhanushn113-ai</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form container -->
+                <div class="contact-form-container glass-card reveal">
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="Your Name" required>
+                                <span class="validation-message" id="error-name">Please enter your name (min. 2 characters).</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="email@example.com" required>
+                                <span class="validation-message" id="error-email">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" placeholder="Job Inquiry / Collaboration Proposal" required>
+                            <span class="validation-message" id="error-subject">Please enter a subject (min. 5 characters).</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" placeholder="Let me know how I can add value to your project..." required></textarea>
+                            <span class="validation-message" id="error-message">Message cannot be empty (min. 10 characters).</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" id="btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fa-solid fa-paper-plane btn-icon"></i>
+                        </button>
+                        
+                        <div class="form-feedback-alert" id="form-feedback">
+                            <!-- Injected by JavaScript -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="#home">DN<span>.</span></a>
+                <p>Building high-performance, robust software products using enterprise Java and AI paradigms.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">Designed & Developed by Dhanush N &copy; 2026</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/dhanushn113-ai" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhanush-n-41a6342aa" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:dhanushn113@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- App Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
