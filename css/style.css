@@ -7,32 +7,36 @@
     --font-body: 'Inter', -apple-system, sans-serif;
 
     /* Color Palette */
-    --color-bg-deep: #0b0f19;       /* Ultra deep blue-black */
-    --color-bg-dark: #0f1626;       /* Slightly lighter background for sections */
-    --color-card-bg: rgba(17, 24, 39, 0.55); /* Glassmorphic card fill */
-    --color-card-border: rgba(255, 255, 255, 0.07);
-    --color-card-border-hover: rgba(59, 130, 246, 0.4);
+    --color-bg-deep: #0f1117;
+    --color-bg-dark: #171b22;
+    --color-card-bg: rgba(28, 32, 42, 0.6);
+    --color-card-border: rgba(255,255,255,0.08);
+    --color-card-border-hover: rgba(16,185,129,.4);
+
     
-    --color-primary: #3b82f6;       /* Vibrant Blue */
-    --color-secondary: #8b5cf6;     /* Bright Purple */
-    --color-accent: #a78bfa;        /* Light Purple */
+    --color-primary: #10b981;      /* Emerald */
+    --color-secondary: #f59e0b;    /* Amber */
+    --color-accent: #34d399;       /* Mint */
     
-    --color-text-primary: #f8fafc;  /* White-ish */
-    --color-text-secondary: #94a3b8;/* Slate-400 */
-    --color-text-muted: #64748b;    /* Slate-500 */
-    --color-success: #10b981;       /* Emerald-500 */
-    --color-error: #ef4444;         /* Red-500 */
+   --color-text-primary: #f8fafc;
+    --color-text-secondary: #cbd5e1;
+    --color-text-muted: #94a3b8;
+    /* Status */
+    --color-success: #22c55e;
+    --color-error: #ef4444;
+
 
     /* Gradients */
-    --grad-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    --grad-text: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%);
-    --grad-glow: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
-    --grad-blue-glow: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 60%);
+    --grad-primary: linear-gradient(135deg,#10b981 0%,#f59e0b 100%);
+    --grad-text: linear-gradient(135deg,#10b981 0%,#facc15 100%);
+    --grad-glow: radial-gradient(circle,rgba(16,185,129,.18)0%,transparent 60%);
+    --grad-blue-glow: radial-gradient(circle,rgba(245,158,11,.15)0%,transparent 60%);
+
 
     /* Shadows & Effects */
-    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --shadow-glow-blue: 0 0 25px rgba(59, 130, 246, 0.25);
-    --shadow-glow-purple: 0 0 25px rgba(139, 92, 246, 0.25);
+     --shadow-glass: 0 8px 32px rgba(0,0,0,.35);
+    --shadow-glow-blue: 0 0 25px rgba(16,185,129,.35);
+    --shadow-glow-purple: 0 0 25px rgba(245,158,11,.30);
     --backdrop-blur: blur(12px);
     
     /* Layout */
