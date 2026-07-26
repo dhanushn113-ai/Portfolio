@@ -104,10 +104,13 @@ cd Portfolio
 * **GitHub:** https://github.com/dhanushn113-ai
 * **LinkedIn:** https://www.linkedin.com/in/dhanush-n-41a6342aa
 
-## ⭐ Support
-
-If you like this project, don't forget to **Star ⭐ this repository**.
-
 ---
 
-**Made with ❤️ by Dhanush N**
+<p align="center">
+⭐ If you found this project helpful, consider giving it a star.
+</p>
+
+<p align="center">
+Made with ❤️ by <b>Dhanush N</b>
+</p>
+
