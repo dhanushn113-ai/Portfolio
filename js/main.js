@@ -296,40 +296,58 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================================================
        8. SKILLS TAB CONTROLS & PROGRESS BARS
        ========================================================================== */
-    const tabs = document.querySelectorAll('.skill-tab');
-    const tabContents = document.querySelectorAll('.skills-tab-content');
+/* ==========================================================================
+   SKILLS TAB CONTROLS & PROGRESS BARS
+   ========================================================================== */
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const target = tab.getAttribute('data-tab');
-            
-            tabs.forEach(t => t.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            tab.classList.add('active');
-            const activeContent = document.getElementById(target);
-            if (activeContent) {
-                activeContent.classList.add('active');
-                // Re-trigger progress bar fill anim for the visible tab
-                const progressBars = activeContent.querySelectorAll('.skill-progress');
-                progressBars.forEach(bar => {
-                    const percent = bar.style.getPropertyValue('--percent') || '0%';
-                    bar.style.width = '0%';
-                    setTimeout(() => {
-                        bar.style.width = percent;
-                    }, 50);
-                });
-            }
-        });
-    });
+const tabs = document.querySelectorAll(".skill-tab");
+const tabContents = document.querySelectorAll(".skills-tab-content");
 
-    const animateSkillsProgress = () => {
-        const progressBars = document.querySelectorAll('.skill-progress');
-        progressBars.forEach(bar => {
-            const percent = bar.style.getPropertyValue('--percent');
+/* Animate progress bars inside a tab */
+function animateProgressBars(container) {
+    const progressBars = container.querySelectorAll(".skill-progress");
+
+    progressBars.forEach((bar) => {
+        const percent = bar.style.getPropertyValue("--percent");
+
+        bar.style.width = "0%";
+
+        setTimeout(() => {
             bar.style.width = percent;
-        });
-    };
+        }, 100);
+    });
+}
+
+/* Tab Switching */
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+
+        const target = tab.dataset.tab;
+
+        // Remove active class
+        tabs.forEach((t) => t.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        // Activate selected tab
+        tab.classList.add("active");
+
+        const activeContent = document.getElementById(target);
+
+        if (activeContent) {
+            activeContent.classList.add("active");
+            animateProgressBars(activeContent);
+        }
+    });
+});
+
+/* Initial Animation */
+window.addEventListener("load", () => {
+    const activeTab = document.querySelector(".skills-tab-content.active");
+
+    if (activeTab) {
+        animateProgressBars(activeTab);
+    }
+});
 
     /* ==========================================================================
        9. GITHUB API INTEGRATION (LIVE DATA FETCH)
