@@ -1178,7 +1178,10 @@ button, input, textarea, select {
     margin: 0 auto;
 }
 
-/* Project Card */
+/* ==========================================================================
+   PROJECT CARD
+   ========================================================================== */
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -1211,7 +1214,10 @@ button, input, textarea, select {
     box-shadow: 0 20px 45px rgba(0,0,0,.25);
 }
 
-/* Header */
+
+/* ==========================================================================
+   PROJECT HEADER
+   ========================================================================== */
 
 .project-header {
     display: flex;
@@ -1220,7 +1226,10 @@ button, input, textarea, select {
     margin-bottom: 22px;
 }
 
-/* Project Type */
+
+/* ==========================================================================
+   PROJECT TYPE
+   ========================================================================== */
 
 .project-type {
     display: inline-flex;
@@ -1233,11 +1242,28 @@ button, input, textarea, select {
     color: var(--color-primary);
 }
 
+/* HotelZone - first project */
+.project-card:first-child .project-type {
+    color: var(--color-primary);
+}
+
+/* Alternate project colors */
 .project-card:nth-child(even) .project-type {
     color: var(--color-secondary);
 }
 
-/* GitHub Button */
+
+/* ==========================================================================
+   PROJECT LINKS
+   ========================================================================== */
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* GitHub + Live Demo buttons */
 
 .project-links a {
     width: 42px;
@@ -1247,11 +1273,16 @@ button, input, textarea, select {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+
     background: rgba(255,255,255,.04);
     border: 1px solid rgba(255,255,255,.08);
+
     color: var(--color-text-secondary);
+
     transition: .3s;
 }
+
+/* Hover effect */
 
 .project-links a:hover {
     background: var(--color-primary);
@@ -1259,11 +1290,30 @@ button, input, textarea, select {
     transform: scale(1.12) rotate(8deg);
 }
 
+/* Alternate card hover */
+
 .project-card:nth-child(even) .project-links a:hover {
     background: var(--color-secondary);
 }
 
-/* Title */
+
+/* ==========================================================================
+   HOTELZONE LIVE DEMO BUTTON
+   ========================================================================== */
+
+.project-card:first-child .project-links a:first-child {
+    color: var(--color-primary);
+}
+
+.project-card:first-child .project-links a:first-child:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   PROJECT TITLE
+   ========================================================================== */
 
 .project-title {
     font-size: 1.5rem;
@@ -1272,7 +1322,10 @@ button, input, textarea, select {
     line-height: 1.3;
 }
 
-/* Description */
+
+/* ==========================================================================
+   PROJECT DESCRIPTION
+   ========================================================================== */
 
 .project-description {
     flex: 1;
@@ -1282,7 +1335,10 @@ button, input, textarea, select {
     margin-bottom: 25px;
 }
 
-/* Technologies */
+
+/* ==========================================================================
+   TECHNOLOGIES
+   ========================================================================== */
 
 .project-tech-tags {
     display: flex;
@@ -1295,17 +1351,25 @@ button, input, textarea, select {
     border-radius: 8px;
     font-size: .75rem;
     font-weight: 600;
+
     background: rgba(59,130,246,.08);
     border: 1px solid rgba(59,130,246,.18);
+
     color: var(--color-primary);
+
     transition: .3s;
 }
+
+/* Alternate project tags */
 
 .project-card:nth-child(even) .project-tech-tags span {
     background: rgba(139,92,246,.08);
     border-color: rgba(139,92,246,.18);
     color: var(--color-secondary);
 }
+
+
+/* Tag hover */
 
 .project-tech-tags span:hover {
     transform: translateY(-3px);
@@ -1317,55 +1381,88 @@ button, input, textarea, select {
     background: var(--color-secondary);
 }
 
-/* Tablet */
 
-@media (max-width:992px){
+/* ==========================================================================
+   HOTELZONE SPECIAL TAGS
+   ========================================================================== */
 
-    .projects-grid{
-        grid-template-columns:1fr;
-        max-width:700px;
+.project-card:first-child .project-tech-tags span {
+    background: rgba(59,130,246,.08);
+    border-color: rgba(59,130,246,.18);
+    color: var(--color-primary);
+}
+
+
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+
+@media (max-width: 992px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
     }
 
 }
 
-/* Mobile */
 
-@media (max-width:768px){
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
 
-    .project-card{
-        padding:26px;
+@media (max-width: 768px) {
+
+    .project-card {
+        padding: 26px;
     }
 
-    .project-title{
-        font-size:1.35rem;
+    .project-title {
+        font-size: 1.35rem;
     }
 
-    .project-description{
-        font-size:.92rem;
+    .project-description {
+        font-size: .92rem;
     }
 
 }
 
-/* Small Mobile */
 
-@media (max-width:480px){
+/* ==========================================================================
+   SMALL MOBILE
+   ========================================================================== */
 
-    .projects-grid{
-        grid-template-columns:1fr;
-        gap:25px;
+@media (max-width: 480px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
-    .project-card{
-        padding:22px;
+    .project-card {
+        padding: 22px;
     }
 
-    .project-tech-tags{
-        gap:8px;
+    .project-header {
+        align-items: flex-start;
     }
 
-    .project-tech-tags span{
-        font-size:.72rem;
-        padding:5px 10px;
+    .project-links {
+        gap: 7px;
+    }
+
+    .project-links a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .project-tech-tags {
+        gap: 8px;
+    }
+
+    .project-tech-tags span {
+        font-size: .72rem;
+        padding: 5px 10px;
     }
 
 }
