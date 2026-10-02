@@ -52,6 +52,12 @@ Hi, I'm **Dhanush N**, a Computer Science Engineering graduate specializing in A
 
 ## 📂 Featured Projects
 
+### 🏨 HotelZone – Full Stack Hotel Management System
+
+A full-stack hotel management application developed using Java, Spring Boot, Spring Security, Spring Data JPA, Hibernate, MySQL, React, and JavaScript. It provides secure authentication, RESTful APIs, database integration, role-based access control, and hotel/restaurant management features.
+
+🔗 [Live Demo](https://hotel-zone-frontend.vercel.app) • [GitHub Repository](https://github.com/dhanushn113-ai/HotelZone-FullStack)
+
 ### 🍔 Online Food Ordering System
 
 A full-stack web application developed using Java, Spring Boot, Spring Security, MySQL, HTML, CSS, and JavaScript. It provides secure authentication, RESTful APIs, and complete CRUD functionality for food ordering.
